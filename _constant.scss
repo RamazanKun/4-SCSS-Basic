@@ -1,0 +1,19 @@
+%medium{
+    display: flex;
+    align-items: center;
+    
+}
+%flex{
+    display: flex;
+    flex-direction: column;
+}
+%hover{
+    transform: scale(1.1);
+    color:  #af0808;
+}
+
+$padding: 40px 60px;
+$padding2:12px 16px;
+$padding3: 0 60px;
+$padding4:16px 20px;
+

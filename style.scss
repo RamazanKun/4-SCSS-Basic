@@ -1,0 +1,144 @@
+@import 'color';
+@import 'constant';
+@import 'media-border';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+
+    height: 100px;
+    box-shadow: 0 0 10px black;
+    @extend %medium;
+    justify-content: space-between;
+    padding: $padding;
+    h1{
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+       
+        span{
+            color: rgb(10, 184, 10);
+        }
+        &:hover{
+            transform: scale(1.1);
+            text-shadow: 0 0 2px rgb(61, 185, 3);
+        }
+    }
+
+    .headerright{
+        @extend %medium;
+        gap: 35px;
+        position: relative;
+        .bars{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 150px;
+            font-size: 26px;
+            opacity: 0;
+
+            @include mobile{
+                opacity: 1;
+            }
+        }
+
+        .link{
+            @extend %medium;
+            gap: 18px;
+
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color:black;
+                &:hover{
+                   @extend %hover
+                }
+
+                @include mobile{
+                    display: none;
+                }
+
+            }
+        }
+        button{
+            background-color: $green ;
+            color: #fff;
+            padding: $padding2;
+            font-size: 18px;
+            border: none;
+            @include border-radius;
+
+            &:hover{
+                background-color: $aqua;
+             }
+        }
+    }
+
+}
+
+.section{
+    margin-top: 40px;
+    @extend %flex;
+    gap:25px;
+    padding:$padding3;
+    
+    
+    .first{
+        width: 770px;
+        font-size: 80px;
+        @include mobile{
+            width: 400px;
+            font-size: 60px;
+        }
+        
+    }
+    .second{
+        width: 400px;
+        font-size: 65px;
+        color: rgba(197, 3, 3, 0.863);
+    }
+    .register{
+       width: 100px;
+       padding: $padding2;
+       font-size: 18px;
+       border: none;
+       background-color:$green;
+       color: #fff;
+       @include border-radius;
+       &:hover{
+        background-color: rgb(3, 83, 83);
+       }
+
+    }
+   
+}
+footer{
+    margin-top: 30px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & address{
+
+    @include mobile{
+        margin-left: -40px;
+    }
+    }
+
+
+}
+   
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 19px;
+        }
+    

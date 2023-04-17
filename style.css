@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.header .headerright .link, .header .headerright, .header {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .headerright .link a:hover {
+  transform: scale(1.1);
+  color: #af0808;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 100px;
+  box-shadow: 0 0 10px black;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+.header h1 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.header h1 span {
+  color: rgb(10, 184, 10);
+}
+.header h1:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 2px rgb(61, 185, 3);
+}
+.header .headerright {
+  gap: 35px;
+  position: relative;
+}
+.header .headerright .bars {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 150px;
+  font-size: 26px;
+  opacity: 0;
+}
+@media screen and (max-width: 650px) {
+  .header .headerright .bars {
+    opacity: 1;
+  }
+}
+.header .headerright .link {
+  gap: 18px;
+}
+.header .headerright .link a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+}
+@media screen and (max-width: 650px) {
+  .header .headerright .link a {
+    display: none;
+  }
+}
+.header .headerright button {
+  background-color: #008000;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+.header .headerright button:hover {
+  background-color: #1d9c9c;
+}
+
+.section {
+  margin-top: 40px;
+  gap: 25px;
+  padding: 0 60px;
+}
+.section .first {
+  width: 770px;
+  font-size: 80px;
+}
+@media screen and (max-width: 650px) {
+  .section .first {
+    width: 400px;
+    font-size: 60px;
+  }
+}
+.section .second {
+  width: 400px;
+  font-size: 65px;
+  color: rgba(197, 3, 3, 0.863);
+}
+.section .register {
+  width: 100px;
+  padding: 12px 16px;
+  font-size: 18px;
+  border: none;
+  background-color: #008000;
+  color: #fff;
+  border-radius: 8px;
+}
+.section .register:hover {
+  background-color: rgb(3, 83, 83);
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 650px) {
+  footer address {
+    margin-left: -40px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}/*# sourceMappingURL=style.css.map */

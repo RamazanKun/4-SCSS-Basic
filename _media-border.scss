@@ -1,0 +1,9 @@
+@mixin border-radius{
+    border-radius: 8px;
+}
+
+@mixin mobile{
+    @media screen and (max-width:650px){
+        @content
+    }
+}
